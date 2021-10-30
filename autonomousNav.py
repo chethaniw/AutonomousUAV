@@ -68,3 +68,13 @@ time.sleep(30)
 print("Going towards third point for 30 seconds ...")
 point3 = LocationGlobalRelative(-35.3629289, 149.1647789, 20)
 vehicle.simple_goto(point3)
+
+print("Returning to Launch")
+vehicle.mode = VehicleMode("RTL")
+
+# print("Land")
+# vehicle.mode = VehicleMode("LAND")
+
+# Close vehicle object before exiting script
+print("Close vehicle object")
+vehicle.close()
