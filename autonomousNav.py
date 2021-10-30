@@ -57,3 +57,14 @@ vehicle.simple_goto(point1)
 
 # # sleep so we can see the change in map
 time.sleep(10)
+
+print("Going towards second point for 30 seconds ...")
+point2 = LocationGlobalRelative(-35.3629289, 149.1647789, 4.8)
+vehicle.simple_goto(point2)
+
+# # sleep so we can see the change in map
+time.sleep(30)
+
+print("Going towards third point for 30 seconds ...")
+point3 = LocationGlobalRelative(-35.3629289, 149.1647789, 20)
+vehicle.simple_goto(point3)
