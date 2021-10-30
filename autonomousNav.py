@@ -40,3 +40,20 @@ def arm_and_takeoff(aTargetAltitude):
       print "Reached target altitude"
       break
     time.sleep(1)
+
+
+    #Takeoff height in meters
+arm_and_takeoff(20)
+
+print("Take off complete")
+
+
+print("Set default/target airspeed to 3")
+vehicle.airspeed = 3
+
+print("Going towards first point for 30 seconds ...")
+point1 = LocationGlobalRelative(-35.3629289, 149.1647789, 20)
+vehicle.simple_goto(point1)
+
+# # sleep so we can see the change in map
+time.sleep(10)
